@@ -210,7 +210,7 @@
   /* SERVICES */
   .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1px;
     background: rgba(244,241,235,0.08);
     border: 1px solid rgba(244,241,235,0.08);
@@ -576,6 +576,10 @@
     .form-row { grid-template-columns: 1fr; }
     footer { flex-direction: column; align-items: flex-start; }
   }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .services-grid { grid-template-columns: 1fr 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -589,9 +593,9 @@
 <!-- HERO -->
 <div class="hero">
   <div class="hero-bg"></div>
-  <p class="hero-tag">New York City &nbsp;/&nbsp; Dispute Resolution</p>
+  <p class="hero-tag">Nationwide &nbsp;/&nbsp; Dispute Resolution</p>
   <h1>We solve <em>impossible</em> problems for a fee.</h1>
-  <p class="hero-sub">Contractor left the job unfinished. Landlord won't return your deposit. You've tried everything. We haven't.</p>
+  <p class="hero-sub">Contractor left the job unfinished. Landlord won't return your deposit. Roommate won't pay or won't leave. You've tried everything. We haven't.</p>
   <div class="hero-actions">
     <a href="#services" class="btn-primary">See What We Handle</a>
     <a href="#how-it-works" class="btn-secondary">How It Works</a>
@@ -624,6 +628,17 @@
         <li>Habitability and repair failures</li>
         <li>Illegal fee disputes</li>
         <li>Lease exit negotiations</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-number">03</div>
+      <h3>Roommate Disputes</h3>
+      <p>Won't pay. Won't leave. Making the place uninhabitable. Roommate situations deteriorate fast and there's no obvious playbook. We have one.</p>
+      <ul>
+        <li>Unpaid rent and shared expenses</li>
+        <li>Removing a roommate who won't leave</li>
+        <li>Hostile or unsafe living situations</li>
+        <li>Lease exit and subletting negotiations</li>
       </ul>
     </div>
   </div>
@@ -714,7 +729,7 @@
         </div>
         <div class="contact-detail-item">
           <span>Service area</span>
-          <span>New York City</span>
+          <span>Nationwide</span>
         </div>
         <div class="contact-detail-item">
           <span>Intake fee</span>
@@ -737,7 +752,7 @@
         <div class="form-row">
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="NYC number preferred">
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
           </div>
           <div class="form-group">
             <label for="type">Dispute type</label>
@@ -745,12 +760,17 @@
               <option value="" disabled selected>Select one</option>
               <option value="contractor">Contractor dispute</option>
               <option value="landlord">Landlord / tenant standoff</option>
+              <option value="roommate">Roommate dispute</option>
             </select>
           </div>
         </div>
         <div class="form-group">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" required placeholder="State where dispute is occurring">
+        </div>
+        <div class="form-group">
           <label for="amount">Dollar amount at stake</label>
-          <input type="text" id="amount" name="amount" placeholder="Approximate value of the dispute">
+          <input type="text" id="amount" name="amount" placeholder="Lump sum, monthly amount, or describe">
         </div>
         <div class="form-group">
           <label for="message">What happened</label>
@@ -773,7 +793,7 @@
 <!-- FOOTER -->
 <footer>
   <a href="#" class="footer-logo">Hard Out<span>.</span>NYC</a>
-  <p class="footer-note">© 2025 Hard Out NYC &nbsp;·&nbsp; New York City<br style="display:none"> Hard Out NYC is a conflict resolution consulting firm. We are not attorneys and do not provide legal advice. Nothing on this site constitutes legal counsel or creates an attorney-client relationship. For legal advice, consult a licensed attorney.</p>
+  <p class="footer-note">© 2025 Hard Out NYC &nbsp;·&nbsp; Nationwide<br style="display:none"> Hard Out NYC is a conflict resolution consulting firm. We are not attorneys and do not provide legal advice. Nothing on this site constitutes legal counsel or creates an attorney-client relationship. For legal advice, consult a licensed attorney.</p>
 </footer>
 
 <script>
