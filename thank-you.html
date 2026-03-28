@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submission Received — Chartreuse Resolutions</title>
+<meta name="description" content="Your intake submission has been received. We'll be in touch within 24 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;0,400;0,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0a0a0a;
+    --white: #f4f1eb;
+    --yellow: #d4a017;
+    --gray: #2a2a2a;
+    --midgray: #555;
+    --lightgray: #888;
+  }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+  }
+
+  .wrap {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.12em;
+    color: var(--white);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+
+  .logo span { color: var(--yellow); }
+
+  .tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    margin-bottom: 2rem;
+  }
+
+  h1 em {
+    font-style: normal;
+    color: var(--yellow);
+  }
+
+  .body-text {
+    font-size: 0.95rem;
+    color: var(--lightgray);
+    line-height: 1.8;
+    max-width: 480px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid rgba(244,241,235,0.08);
+    border-bottom: 1px solid rgba(244,241,235,0.08);
+    padding: 2rem 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .detail-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--yellow);
+  }
+
+  .detail-value {
+    font-size: 0.88rem;
+    color: var(--lightgray);
+    text-align: right;
+  }
+
+  .back-link {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--midgray);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover { color: var(--white); }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(244,241,235,0.08);
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .footer-logo span { color: var(--yellow); }
+
+  .footer-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--midgray);
+  }
+
+  @media (max-width: 600px) {
+    .detail-item { flex-direction: column; align-items: flex-start; }
+    .detail-value { text-align: left; }
+    footer { flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <a href="/" class="logo">Chartreuse<span>.</span>Resolutions</a>
+  <p class="tag">Submission received</p>
+  <h1>We have your <em>situation.</em></h1>
+  <p class="body-text">Your intake has been submitted. We review every submission and will contact you within 24 hours. No payment is due at this stage.</p>
+
+  <div class="details">
+    <div class="detail-item">
+      <span class="detail-label">Response time</span>
+      <span class="detail-value">Within 24 hours</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">Next step</span>
+      <span class="detail-value">We contact you to confirm intake</span>
+    </div>
+    <div class="detail-item">
+      <span class="detail-label">Payment due now</span>
+      <span class="detail-value">None</span>
+    </div>
+  </div>
+
+  <a href="/" class="back-link">← Return to site</a>
+</div>
+
+<footer>
+  <a href="/" class="footer-logo">Chartreuse<span>.</span>Resolutions</a>
+  <span class="footer-note">Conflict Resolution Consulting — Not a Law Firm</span>
+</footer>
+
+</body>
+</html>
