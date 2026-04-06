@@ -818,6 +818,21 @@
         status.style.display = 'block';
         status.style.color = 'var(--yellow)';
         status.textContent = 'Received. We review every submission and will contact you within 24 hours if your case is one we can move.';
+        
+        // --- THIS IS THE NEW PART ---
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11183152636/4fMWCLnr7JYcEPy7xdQp',
+            'value': 150.0,
+            'currency': 'USD'
+        });
+        // ----------------------------
+
+      } else { {
+        this.reset();
+        btn.style.display = 'none';
+        status.style.display = 'block';
+        status.style.color = 'var(--yellow)';
+        status.textContent = 'Received. We review every submission and will contact you within 24 hours if your case is one we can move.';
       } else {
         throw new Error();
       }
