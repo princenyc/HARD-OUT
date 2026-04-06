@@ -12,7 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chartreuse Resolutions — Dispute Resolution</title>
-  <meta name="description" content="Contractor disputes. Landlord standoffs. We solve impossible problems for a fee. NYC.">
+  <meta name="description" content="Contractor disputes. Landlord standoffs. We solve impossible problems for a fee. Flat fee. Nationwide.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -63,6 +63,29 @@
 
     .nav-logo span { color: var(--yellow); }
 
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .nav-text-us {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid rgba(212,160,23,0.4);
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .nav-text-us:hover {
+      border-color: var(--yellow);
+      background: rgba(212,160,23,0.08);
+    }
+
     .nav-cta {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
@@ -79,11 +102,11 @@
 
     /* HERO */
     .hero {
-      min-height: 100vh;
+      min-height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 100px 2.5rem 4rem;
+      padding: 120px 2.5rem 3rem;
       position: relative;
       overflow: hidden;
     }
@@ -140,8 +163,23 @@
       animation: fadeUp 0.7s ease forwards 0.5s;
     }
 
+    .hero-pricing {
+      margin-top: 1.75rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--white);
+      letter-spacing: 0.05em;
+      opacity: 0;
+      animation: fadeUp 0.7s ease forwards 0.58s;
+    }
+
+    .hero-pricing strong {
+      color: var(--yellow);
+      font-weight: 500;
+    }
+
     .hero-actions {
-      margin-top: 2.5rem;
+      margin-top: 2rem;
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
@@ -180,6 +218,25 @@
 
     .btn-secondary:hover { border-color: var(--white); }
 
+    .btn-text-mobile {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      background: transparent;
+      border: 1px solid rgba(212,160,23,0.4);
+      padding: 0.9rem 2rem;
+      text-decoration: none;
+      display: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn-text-mobile:hover {
+      border-color: var(--yellow);
+      background: rgba(212,160,23,0.08);
+    }
+
     /* DIVIDER */
     .divider {
       border: none;
@@ -189,7 +246,7 @@
 
     /* SECTIONS */
     section {
-      padding: 6rem 2.5rem;
+      padding: 5rem 2.5rem;
       max-width: 1100px;
       margin: 0 auto;
     }
@@ -407,6 +464,31 @@
       color: var(--lightgray);
     }
 
+    .contact-text-option {
+      margin-top: 2rem;
+      padding: 1.25rem;
+      border: 1px solid rgba(212,160,23,0.3);
+      background: rgba(212,160,23,0.04);
+    }
+
+    .contact-text-option p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--lightgray);
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+
+    .contact-text-option a {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: var(--yellow);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+
+    .contact-text-option a:hover { opacity: 0.8; }
+
     /* FORM */
     form { display: flex; flex-direction: column; gap: 1rem; }
 
@@ -473,37 +555,23 @@
 
     .form-submit:hover { opacity: 0.85; }
 
-    .form-disclaimer {
+    .form-trust {
       font-family: 'DM Mono', monospace;
-      font-size: 0.62rem;
-      color: var(--midgray);
+      font-size: 0.68rem;
+      color: var(--lightgray);
       line-height: 1.7;
       margin-top: 0.25rem;
+      border-left: 2px solid rgba(212,160,23,0.3);
+      padding-left: 0.75rem;
     }
 
-    /* DISCLAIMER */
-    .disclaimer-wrap {
-      border-left: 2px solid rgba(212,160,23,0.4);
-      padding-left: 2rem;
-      max-width: 720px;
+    .form-disclaimer {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      color: var(--midgray);
+      line-height: 1.7;
+      margin-top: 0.5rem;
     }
-
-    .disclaimer-heading {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.6rem;
-      letter-spacing: 0.05em;
-      color: var(--white);
-      margin-bottom: 1rem;
-    }
-
-    .disclaimer-body {
-      font-size: 0.95rem;
-      color: var(--lightgray);
-      line-height: 1.85;
-      margin-bottom: 1rem;
-    }
-
-    .disclaimer-body:last-child { margin-bottom: 0; }
 
     /* FOOTER */
     footer {
@@ -529,7 +597,7 @@
 
     .footer-note {
       font-family: 'DM Mono', monospace;
-      font-size: 0.62rem;
+      font-size: 0.58rem;
       color: var(--midgray);
       letter-spacing: 0.03em;
       line-height: 1.8;
@@ -557,14 +625,19 @@
     /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 1rem 1.25rem; }
-      .hero { padding: 0 1.25rem 4rem; }
-      section { padding: 4rem 1.25rem; }
+      .nav-cta { font-size: 0.6rem; padding: 0.45rem 0.75rem; }
+      .nav-text-us { font-size: 0.6rem; padding: 0.45rem 0.6rem; }
+      .hero { padding: 100px 1.25rem 2.5rem; }
+      section { padding: 3.5rem 1.25rem; }
       .services-grid { grid-template-columns: 1fr; }
+      .service-card { padding: 2rem 1.5rem; }
       .steps { grid-template-columns: 1fr; gap: 2rem; }
       .pricing-row { grid-template-columns: 1fr; }
       .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
       .form-row { grid-template-columns: 1fr; }
+      .btn-text-mobile { display: inline-block; }
       footer { flex-direction: column; align-items: flex-start; }
+      .footer-note { text-align: left; }
     }
 
     @media (max-width: 1024px) and (min-width: 769px) {
@@ -576,7 +649,10 @@
 
 <nav>
   <a href="#" class="nav-logo">Chartreuse<span>.</span>Resolutions</a>
-  <a href="#contact" class="nav-cta">Submit Your Case</a>
+  <div class="nav-right">
+    <a href="sms:9178018840" class="nav-text-us">Text Us</a>
+    <a href="#contact" class="nav-cta">Free Screening</a>
+  </div>
 </nav>
 
 <div class="hero">
@@ -584,9 +660,11 @@
   <p class="hero-tag">Nationwide &nbsp;/&nbsp; Dispute Resolution</p>
   <h1>We solve <em>impossible</em> problems for a fee.</h1>
   <p class="hero-sub">Contractor left the job unfinished. Landlord won't return your deposit. Roommate won't pay or won't leave. You've tried everything. We haven't.</p>
+  <p class="hero-pricing"><strong>$150</strong> intake &nbsp;·&nbsp; <strong>$250–$400</strong> execution &nbsp;·&nbsp; Flat fee. No hourly billing.</p>
   <div class="hero-actions">
-    <a href="#services" class="btn-primary">See What We Handle</a>
-    <a href="#how-it-works" class="btn-secondary">How It Works</a>
+    <a href="#contact" class="btn-primary">Free Case Screening</a>
+    <a href="#services" class="btn-secondary">What We Handle</a>
+    <a href="sms:9178018840" class="btn-text-mobile">Text Us Your Situation</a>
   </div>
 </div>
 
@@ -639,12 +717,12 @@
     <div class="step reveal">
       <div class="step-num">01</div>
       <h4>Submit your situation</h4>
-      <p>Fill out the intake form below. Describe the dispute, the dollar amount at stake, and how long it's been unresolved. Takes five minutes.</p>
+      <p>Fill out the screening form below or text us. Describe the dispute and what you've tried. Takes two minutes. Costs nothing.</p>
     </div>
     <div class="step reveal">
       <div class="step-num">02</div>
       <h4>We assess and advise</h4>
-      <p>After intake payment, we review your case and tell you what's possible. If we can't move the needle, we'll say so. No execution fee charged.</p>
+      <p>We review your case within 24 hours. If we can help, we'll explain what's possible. If we can't move the needle, we'll say so. The $150 intake fee applies only when we take the case.</p>
     </div>
     <div class="step reveal">
       <div class="step-num">03</div>
@@ -662,7 +740,7 @@
     <div class="pricing-card">
       <p class="price-label">Intake & Assessment</p>
       <p class="price-amount">$150</p>
-      <p class="price-desc">Non-refundable. Covers our review of your situation and a direct assessment of what resolution is possible. Paid before we speak.</p>
+      <p class="price-desc">Non-refundable. Covers our review of your situation and a direct assessment of what resolution is possible. Charged only after we confirm we're taking your case.</p>
     </div>
     <div class="pricing-card featured">
       <p class="price-label">Execution</p>
@@ -679,32 +757,12 @@
 
 <hr class="divider">
 
-<section id="disclaimer">
-  <p class="section-label reveal">Important</p>
-  <div class="disclaimer-wrap reveal">
-    <h3 class="disclaimer-heading">Not legal advice</h3>
-    <p class="disclaimer-body">
-      Chartreuse Resolutions resolves disputes through negotiation, documentation, and strategic pressure.
-      We are not a law firm. We do not practice law, appear in court, or provide legal representation.
-      Our work operates entirely outside the legal system.
-    </p>
-    <p class="disclaimer-body">
-      If your situation has crossed into legal territory — active litigation, criminal matters,
-      or court proceedings — we are not the right resource and will tell you so at intake.
-      The $150 intake fee covers that assessment. If we can't help you, we'll say so clearly
-      and refer you to someone who can.
-    </p>
-  </div>
-</section>
-
-<hr class="divider">
-
 <section id="contact">
   <div class="contact-wrap">
     <div class="contact-left reveal">
       <p class="section-label">Start here</p>
-      <h2>Tell us what happened.</h2>
-      <p>Fill out the form. We review every submission. If your case is one we can move, we'll contact you within 24 hours to confirm intake.</p>
+      <h2>Free case screening.</h2>
+      <p>Tell us what happened. No payment required. We review every submission and respond within 24 hours. The $150 intake fee applies only if we confirm we can help.</p>
       <div class="contact-detail">
         <div class="contact-detail-item">
           <span>Response time</span>
@@ -714,10 +772,10 @@
           <span>Service area</span>
           <span>Nationwide</span>
         </div>
-        <div class="contact-detail-item">
-          <span>Intake fee</span>
-          <span>$150 — charged after we confirm we're taking the case</span>
-        </div>
+      </div>
+      <div class="contact-text-option">
+        <p>Prefer to text? Describe your situation and we'll respond within 24 hours.</p>
+        <a href="sms:9178018840">(917) 801-8840</a>
       </div>
     </div>
     <div class="contact-right reveal">
@@ -728,45 +786,31 @@
             <input type="text" id="name" name="name" required placeholder="Full name">
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="you@email.com">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-          </div>
-          <div class="form-group">
-            <label for="type">Dispute type</label>
-            <select id="type" name="dispute_type" required>
-              <option value="" disabled selected>Select one</option>
-              <option value="contractor">Contractor dispute</option>
-              <option value="landlord">Landlord / tenant standoff</option>
-              <option value="roommate">Roommate dispute</option>
-            </select>
+            <label for="email">Email or phone</label>
+            <input type="text" id="email" name="email" required placeholder="How should we reach you?">
           </div>
         </div>
         <div class="form-group">
-          <label for="state">State</label>
-          <input type="text" id="state" name="state" required placeholder="State where dispute is occurring">
-        </div>
-        <div class="form-group">
-          <label for="amount">Dollar amount at stake</label>
-          <input type="text" id="amount" name="amount" placeholder="Lump sum, monthly amount, or describe">
+          <label for="type">Dispute type</label>
+          <select id="type" name="dispute_type" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="contractor">Contractor dispute</option>
+            <option value="landlord">Landlord / tenant standoff</option>
+            <option value="roommate">Roommate dispute</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="message">What happened</label>
-          <textarea id="message" name="message" required placeholder="Describe the situation. The more specific, the better."></textarea>
+          <textarea id="message" name="message" required placeholder="Describe the situation. Include the dollar amount at stake and how long it's been unresolved."></textarea>
         </div>
         <button type="submit" class="form-submit" id="cr-submit">Submit for Review</button>
+        <p class="form-trust">No payment required to submit. We respond within 24 hours. The $150 intake fee applies only if we take your case.</p>
         <div id="cr-status" style="display:none; font-family:'DM Mono',monospace; font-size:0.8rem; margin-top:1rem; padding:1rem; border-left:2px solid var(--yellow);"></div>
         <p class="form-disclaimer">
           Submitting this form does not create an engagement or obligate payment.
           Chartreuse Resolutions provides conflict resolution consulting services only.
-          We are not lawyers. We do not provide legal advice, represent clients in legal proceedings,
-          or create attorney-client relationships. If your situation requires legal representation,
-          we will tell you at intake and refer you accordingly.
+          We are not lawyers. We do not practice law, appear in court, or provide legal representation.
+          If your situation requires legal representation, we will tell you at intake and refer you accordingly.
           The $150 intake fee covers that assessment.
         </p>
       </form>
@@ -825,7 +869,7 @@
       btn.textContent = 'Submit for Review';
       status.style.display = 'block';
       status.style.color = '#c0392b';
-      status.textContent = 'Something went wrong. Try again or email us directly.';
+      status.textContent = 'Something went wrong. Try again or text us at (917) 801-8840.';
     }
   });
 </script>
