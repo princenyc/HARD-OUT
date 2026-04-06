@@ -349,4 +349,486 @@
       line-height: 1.7;
     }
 
-    .pricing
+    .pricing-note {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--lightgray);
+      line-height: 1.8;
+      border-left: 2px solid rgba(212,160,23,0.3);
+      padding-left: 1.25rem;
+    }
+
+    /* CONTACT */
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-left h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-left p {
+      font-size: 0.95rem;
+      color: var(--lightgray);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-detail-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .contact-detail-item span:first-child {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--yellow);
+    }
+
+    .contact-detail-item span:last-child {
+      font-size: 0.95rem;
+      color: var(--lightgray);
+    }
+
+    /* FORM */
+    form { display: flex; flex-direction: column; gap: 1rem; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+    .form-group label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--lightgray);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--gray);
+      border: 1px solid rgba(244,241,235,0.1);
+      color: var(--white);
+      padding: 0.85rem 1rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+      appearance: none;
+    }
+
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23888'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form-group select option { background: var(--gray); }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--yellow);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    .form-submit {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--black);
+      background: var(--yellow);
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      align-self: flex-start;
+      margin-top: 0.5rem;
+    }
+
+    .form-submit:hover { opacity: 0.85; }
+
+    .form-disclaimer {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--midgray);
+      line-height: 1.7;
+      margin-top: 0.25rem;
+    }
+
+    /* DISCLAIMER */
+    .disclaimer-wrap {
+      border-left: 2px solid rgba(212,160,23,0.4);
+      padding-left: 2rem;
+      max-width: 720px;
+    }
+
+    .disclaimer-heading {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .disclaimer-body {
+      font-size: 0.95rem;
+      color: var(--lightgray);
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+
+    .disclaimer-body:last-child { margin-bottom: 0; }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(244,241,235,0.08);
+      padding: 2rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      color: var(--white);
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .footer-logo span { color: var(--yellow); }
+
+    .footer-note {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      color: var(--midgray);
+      letter-spacing: 0.03em;
+      line-height: 1.8;
+      max-width: 600px;
+      text-align: right;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.25rem; }
+      .hero { padding: 0 1.25rem 4rem; }
+      section { padding: 4rem 1.25rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; gap: 2rem; }
+      .pricing-row { grid-template-columns: 1fr; }
+      .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+      .services-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Chartreuse<span>.</span>Resolutions</a>
+  <a href="#contact" class="nav-cta">Submit Your Case</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <p class="hero-tag">Nationwide &nbsp;/&nbsp; Dispute Resolution</p>
+  <h1>We solve <em>impossible</em> problems for a fee.</h1>
+  <p class="hero-sub">Contractor left the job unfinished. Landlord won't return your deposit. Roommate won't pay or won't leave. You've tried everything. We haven't.</p>
+  <div class="hero-actions">
+    <a href="#services" class="btn-primary">See What We Handle</a>
+    <a href="#how-it-works" class="btn-secondary">How It Works</a>
+  </div>
+</div>
+
+<hr class="divider">
+
+<section id="services">
+  <p class="section-label reveal">What we handle</p>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-number">01</div>
+      <h3>Contractor Disputes</h3>
+      <p>Work abandoned. Money taken. No recourse — until now. We apply the kind of pressure that moves contractors who've stopped responding to everyone else.</p>
+      <ul>
+        <li>Abandoned or incomplete jobs</li>
+        <li>Overcharges and billing disputes</li>
+        <li>Damage caused during work</li>
+        <li>Deposit and materials recovery</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-number">02</div>
+      <h3>Landlord Standoffs</h3>
+      <p>Security deposits withheld. Repairs ignored. Lease threats used as leverage. We resolve landlord disputes that tenants can't win alone.</p>
+      <ul>
+        <li>Security deposit recovery</li>
+        <li>Habitability and repair failures</li>
+        <li>Illegal fee disputes</li>
+        <li>Lease exit negotiations</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-number">03</div>
+      <h3>Roommate Disputes</h3>
+      <p>Won't pay. Won't leave. Making the place uninhabitable. Roommate situations deteriorate fast and there's no obvious playbook. We have one.</p>
+      <ul>
+        <li>Unpaid rent and shared expenses</li>
+        <li>Removing a roommate who won't leave</li>
+        <li>Hostile or unsafe living situations</li>
+        <li>Lease exit and subletting negotiations</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="how-it-works">
+  <p class="section-label reveal">The process</p>
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <h4>Submit your situation</h4>
+      <p>Fill out the intake form below. Describe the dispute, the dollar amount at stake, and how long it's been unresolved. Takes five minutes.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <h4>We assess and advise</h4>
+      <p>After intake payment, we review your case and tell you what's possible. If we can't move the needle, we'll say so. No execution fee charged.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <h4>We get to work</h4>
+      <p>Execution begins after the second payment. We apply leverage the other party didn't expect. Most cases resolve within two to four weeks.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="pricing">
+  <p class="section-label reveal">Fees</p>
+  <div class="pricing-row reveal">
+    <div class="pricing-card">
+      <p class="price-label">Intake & Assessment</p>
+      <p class="price-amount">$150</p>
+      <p class="price-desc">Non-refundable. Covers our review of your situation and a direct assessment of what resolution is possible. Paid before we speak.</p>
+    </div>
+    <div class="pricing-card featured">
+      <p class="price-label">Execution</p>
+      <p class="price-amount">$250–$400</p>
+      <p class="price-desc">Flat fee based on case complexity. Determined after intake assessment. Paid before execution begins. No hourly billing. No contingency.</p>
+    </div>
+  </div>
+  <p class="pricing-note reveal">
+    Both fees are paid in full before work begins. We don't bill hourly and we don't take a percentage of recovery.
+    Total engagement cost: $400–$550 depending on complexity.
+    We will tell you at intake if your case falls outside what we handle.
+  </p>
+</section>
+
+<hr class="divider">
+
+<section id="disclaimer">
+  <p class="section-label reveal">Important</p>
+  <div class="disclaimer-wrap reveal">
+    <h3 class="disclaimer-heading">Not legal advice</h3>
+    <p class="disclaimer-body">
+      Chartreuse Resolutions resolves disputes through negotiation, documentation, and strategic pressure.
+      We are not a law firm. We do not practice law, appear in court, or provide legal representation.
+      Our work operates entirely outside the legal system.
+    </p>
+    <p class="disclaimer-body">
+      If your situation has crossed into legal territory — active litigation, criminal matters,
+      or court proceedings — we are not the right resource and will tell you so at intake.
+      The $150 intake fee covers that assessment. If we can't help you, we'll say so clearly
+      and refer you to someone who can.
+    </p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-left reveal">
+      <p class="section-label">Start here</p>
+      <h2>Tell us what happened.</h2>
+      <p>Fill out the form. We review every submission. If your case is one we can move, we'll contact you within 24 hours to confirm intake.</p>
+      <div class="contact-detail">
+        <div class="contact-detail-item">
+          <span>Response time</span>
+          <span>Within 24 hours</span>
+        </div>
+        <div class="contact-detail-item">
+          <span>Service area</span>
+          <span>Nationwide</span>
+        </div>
+        <div class="contact-detail-item">
+          <span>Intake fee</span>
+          <span>$150 — charged after we confirm we're taking the case</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right reveal">
+      <form id="cr-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@email.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+          </div>
+          <div class="form-group">
+            <label for="type">Dispute type</label>
+            <select id="type" name="dispute_type" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="contractor">Contractor dispute</option>
+              <option value="landlord">Landlord / tenant standoff</option>
+              <option value="roommate">Roommate dispute</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" required placeholder="State where dispute is occurring">
+        </div>
+        <div class="form-group">
+          <label for="amount">Dollar amount at stake</label>
+          <input type="text" id="amount" name="amount" placeholder="Lump sum, monthly amount, or describe">
+        </div>
+        <div class="form-group">
+          <label for="message">What happened</label>
+          <textarea id="message" name="message" required placeholder="Describe the situation. The more specific, the better."></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="cr-submit">Submit for Review</button>
+        <div id="cr-status" style="display:none; font-family:'DM Mono',monospace; font-size:0.8rem; margin-top:1rem; padding:1rem; border-left:2px solid var(--yellow);"></div>
+        <p class="form-disclaimer">
+          Submitting this form does not create an engagement or obligate payment.
+          Chartreuse Resolutions provides conflict resolution consulting services only.
+          We are not lawyers. We do not provide legal advice, represent clients in legal proceedings,
+          or create attorney-client relationships. If your situation requires legal representation,
+          we will tell you at intake and refer you accordingly.
+          The $150 intake fee covers that assessment.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="#" class="footer-logo">Chartreuse Resolutions<span>.</span></a>
+  <p class="footer-note">© 2025 Chartreuse Resolutions &nbsp;·&nbsp; Nationwide<br style="display:none"> Chartreuse Resolutions is a conflict resolution consulting firm. We are not attorneys and do not provide legal advice. Nothing on this site constitutes legal counsel or creates an attorney-client relationship. For legal advice, consult a licensed attorney. A proud part of Chartreuse Explosives.</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  document.getElementById('cr-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('cr-submit');
+    const status = document.getElementById('cr-status');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    try {
+      const res = await fetch('https://formspree.io/f/mkopowaq', {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        this.reset();
+        btn.style.display = 'none';
+        status.style.display = 'block';
+        status.style.color = 'var(--yellow)';
+        status.textContent = 'Received. We review every submission and will contact you within 24 hours if your case is one we can move.';
+        
+        // Google Ads Conversion Event
+        gtag('event', 'conversion', {
+            'send_to': 'AW-11183152636/4fMWCLnr7JYcEPy7xdQp',
+            'value': 150.0,
+            'currency': 'USD'
+        });
+
+      } else {
+        throw new Error();
+      }
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Submit for Review';
+      status.style.display = 'block';
+      status.style.color = '#c0392b';
+      status.textContent = 'Something went wrong. Try again or email us directly.';
+    }
+  });
+</script>
+
+</body>
+</html>
