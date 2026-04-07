@@ -6,13 +6,12 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'AW-11183152636');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chartreuse Resolutions — Dispute Resolution</title>
-  <meta name="description" content="Contractor disputes. Landlord standoffs. We solve impossible problems for a fee. Flat fee. Nationwide.">
+  <meta name="description" content="Contractor disputes. Landlord standoffs. We solve impossible problems for a fee. Flat fee. No surprises. Nationwide.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -47,15 +46,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.25rem 2.5rem;
+      padding: 1rem 1.25rem;
       border-bottom: 1px solid rgba(244,241,235,0.08);
-      background: rgba(10,10,10,0.92);
+      background: rgba(10,10,10,0.95);
       backdrop-filter: blur(8px);
     }
 
     .nav-logo {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       letter-spacing: 0.12em;
       color: var(--white);
       text-decoration: none;
@@ -66,17 +65,17 @@
     .nav-right {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0.6rem;
     }
 
     .nav-text-us {
       font-family: 'DM Mono', monospace;
-      font-size: 0.65rem;
+      font-size: 0.6rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--yellow);
       text-decoration: none;
-      padding: 0.5rem 0.75rem;
+      padding: 0.45rem 0.65rem;
       border: 1px solid rgba(212,160,23,0.4);
       transition: border-color 0.2s, background 0.2s;
     }
@@ -88,12 +87,12 @@
 
     .nav-cta {
       font-family: 'DM Mono', monospace;
-      font-size: 0.7rem;
-      letter-spacing: 0.15em;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--black);
       background: var(--yellow);
-      padding: 0.5rem 1.25rem;
+      padding: 0.45rem 0.9rem;
       text-decoration: none;
       transition: opacity 0.2s;
     }
@@ -102,11 +101,10 @@
 
     /* HERO */
     .hero {
-      min-height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 120px 2.5rem 3rem;
+      padding: 100px 1.25rem 2.5rem;
       position: relative;
       overflow: hidden;
     }
@@ -127,22 +125,21 @@
 
     .hero-tag {
       font-family: 'DM Mono', monospace;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--yellow);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
       opacity: 0;
       animation: fadeUp 0.6s ease forwards 0.2s;
     }
 
     .hero h1 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3rem, 8vw, 7rem);
+      font-size: clamp(3rem, 14vw, 7rem);
       line-height: 0.92;
       letter-spacing: 0.02em;
       color: var(--white);
-      max-width: 900px;
       opacity: 0;
       animation: fadeUp 0.7s ease forwards 0.35s;
     }
@@ -153,18 +150,17 @@
     }
 
     .hero-sub {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
       font-size: 1rem;
       font-weight: 400;
       color: var(--lightgray);
-      max-width: 480px;
       line-height: 1.7;
       opacity: 0;
       animation: fadeUp 0.7s ease forwards 0.5s;
     }
 
-    .hero-pricing {
-      margin-top: 1.75rem;
+    .hero-flat {
+      margin-top: 1.25rem;
       font-family: 'DM Mono', monospace;
       font-size: 0.78rem;
       color: var(--white);
@@ -173,16 +169,13 @@
       animation: fadeUp 0.7s ease forwards 0.58s;
     }
 
-    .hero-pricing strong {
-      color: var(--yellow);
-      font-weight: 500;
-    }
+    .hero-flat strong { color: var(--yellow); font-weight: 500; }
 
     .hero-actions {
-      margin-top: 2rem;
+      margin-top: 1.75rem;
       display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 0.75rem;
       opacity: 0;
       animation: fadeUp 0.7s ease forwards 0.65s;
     }
@@ -194,9 +187,10 @@
       text-transform: uppercase;
       color: var(--black);
       background: var(--yellow);
-      padding: 0.9rem 2rem;
+      padding: 1rem 1.5rem;
       text-decoration: none;
-      display: inline-block;
+      display: block;
+      text-align: center;
       transition: opacity 0.2s;
     }
 
@@ -210,15 +204,16 @@
       color: var(--white);
       background: transparent;
       border: 1px solid rgba(244,241,235,0.25);
-      padding: 0.9rem 2rem;
+      padding: 1rem 1.5rem;
       text-decoration: none;
-      display: inline-block;
-      transition: border-color 0.2s, color 0.2s;
+      display: block;
+      text-align: center;
+      transition: border-color 0.2s;
     }
 
     .btn-secondary:hover { border-color: var(--white); }
 
-    .btn-text-mobile {
+    .btn-text {
       font-family: 'DM Mono', monospace;
       font-size: 0.72rem;
       letter-spacing: 0.15em;
@@ -226,13 +221,14 @@
       color: var(--yellow);
       background: transparent;
       border: 1px solid rgba(212,160,23,0.4);
-      padding: 0.9rem 2rem;
+      padding: 1rem 1.5rem;
       text-decoration: none;
-      display: none;
+      display: block;
+      text-align: center;
       transition: border-color 0.2s, background 0.2s;
     }
 
-    .btn-text-mobile:hover {
+    .btn-text:hover {
       border-color: var(--yellow);
       background: rgba(212,160,23,0.08);
     }
@@ -246,18 +242,18 @@
 
     /* SECTIONS */
     section {
-      padding: 5rem 2.5rem;
+      padding: 3.5rem 1.25rem;
       max-width: 1100px;
       margin: 0 auto;
     }
 
     .section-label {
       font-family: 'DM Mono', monospace;
-      font-size: 0.65rem;
+      font-size: 0.62rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--yellow);
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
       display: flex;
       align-items: center;
       gap: 0.75rem;
@@ -275,7 +271,7 @@
     /* SERVICES */
     .services-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 1px;
       background: rgba(244,241,235,0.08);
       border: 1px solid rgba(244,241,235,0.08);
@@ -283,26 +279,26 @@
 
     .service-card {
       background: var(--black);
-      padding: 3rem 2.5rem;
+      padding: 2rem 1.5rem;
       transition: background 0.25s;
     }
 
-    .service-card:hover { background: var(--gray); }
+    .service-card:active { background: var(--gray); }
 
     .service-number {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: rgba(212,160,23,0.15);
       line-height: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .service-card h3 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       letter-spacing: 0.05em;
       color: var(--white);
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .service-card p {
@@ -312,7 +308,7 @@
     }
 
     .service-card ul {
-      margin-top: 1.25rem;
+      margin-top: 1rem;
       list-style: none;
       display: flex;
       flex-direction: column;
@@ -321,7 +317,7 @@
 
     .service-card ul li {
       font-family: 'DM Mono', monospace;
-      font-size: 0.75rem;
+      font-size: 0.73rem;
       color: var(--lightgray);
       padding-left: 1rem;
       position: relative;
@@ -338,16 +334,16 @@
     /* HOW IT WORKS */
     .steps {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3rem;
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
 
     .step-num {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 4rem;
+      font-size: 3.5rem;
       color: rgba(212,160,23,0.2);
       line-height: 1;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
     }
 
     .step h4 {
@@ -355,7 +351,7 @@
       font-size: 1rem;
       font-weight: 500;
       color: var(--white);
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.5rem;
     }
 
     .step p {
@@ -364,85 +360,53 @@
       line-height: 1.75;
     }
 
-    /* PRICING */
-    .pricing-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1px;
-      background: rgba(244,241,235,0.08);
-      border: 1px solid rgba(244,241,235,0.08);
-      margin-bottom: 1.5rem;
-    }
-
-    .pricing-card {
-      background: var(--black);
-      padding: 2.5rem;
-    }
-
-    .pricing-card.featured {
+    /* SOCIAL PROOF STRIP */
+    .proof-strip {
       background: var(--gray);
+      border-left: 3px solid var(--yellow);
+      padding: 1.5rem 1.25rem;
+      margin: 0 1.25rem;
     }
 
-    .price-label {
+    .proof-strip p {
       font-family: 'DM Mono', monospace;
-      font-size: 0.65rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--lightgray);
-      margin-bottom: 0.75rem;
-    }
-
-    .price-amount {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 3.5rem;
-      color: var(--yellow);
-      line-height: 1;
-      margin-bottom: 0.5rem;
-    }
-
-    .price-desc {
-      font-size: 0.95rem;
-      color: var(--lightgray);
-      line-height: 1.7;
-    }
-
-    .pricing-note {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       color: var(--lightgray);
       line-height: 1.8;
-      border-left: 2px solid rgba(212,160,23,0.3);
-      padding-left: 1.25rem;
+    }
+
+    .proof-strip strong {
+      color: var(--yellow);
+      font-weight: 500;
     }
 
     /* CONTACT */
     .contact-wrap {
       display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 5rem;
-      align-items: start;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
     }
 
     .contact-left h2 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-size: clamp(2.2rem, 10vw, 4rem);
       line-height: 1;
       color: var(--white);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     .contact-left p {
       font-size: 0.95rem;
       color: var(--lightgray);
       line-height: 1.8;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .contact-detail {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      margin-top: 1.5rem;
+      margin-top: 1.25rem;
     }
 
     .contact-detail-item {
@@ -465,7 +429,7 @@
     }
 
     .contact-text-option {
-      margin-top: 2rem;
+      margin-top: 1.75rem;
       padding: 1.25rem;
       border: 1px solid rgba(212,160,23,0.3);
       background: rgba(212,160,23,0.04);
@@ -473,7 +437,7 @@
 
     .contact-text-option p {
       font-family: 'DM Mono', monospace;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       color: var(--lightgray);
       margin-bottom: 0.75rem;
       line-height: 1.6;
@@ -492,8 +456,6 @@
     /* FORM */
     form { display: flex; flex-direction: column; gap: 1rem; }
 
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-
     .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
 
     .form-group label {
@@ -510,20 +472,23 @@
       background: var(--gray);
       border: 1px solid rgba(244,241,235,0.1);
       color: var(--white);
-      padding: 0.85rem 1rem;
+      padding: 0.95rem 1rem;
       font-family: 'DM Sans', sans-serif;
-      font-size: 0.95rem;
+      font-size: 1rem;
       font-weight: 400;
       outline: none;
       transition: border-color 0.2s;
       width: 100%;
       appearance: none;
+      border-radius: 0;
+      -webkit-appearance: none;
     }
 
     .form-group select {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23888'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right 1rem center;
+      background-color: var(--gray);
       padding-right: 2.5rem;
       cursor: pointer;
     }
@@ -536,7 +501,10 @@
       border-color: var(--yellow);
     }
 
-    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
 
     .form-submit {
       font-family: 'DM Mono', monospace;
@@ -546,11 +514,13 @@
       color: var(--black);
       background: var(--yellow);
       border: none;
-      padding: 1rem 2rem;
+      padding: 1.1rem 2rem;
       cursor: pointer;
       transition: opacity 0.2s;
-      align-self: flex-start;
+      width: 100%;
       margin-top: 0.5rem;
+      border-radius: 0;
+      -webkit-appearance: none;
     }
 
     .form-submit:hover { opacity: 0.85; }
@@ -576,11 +546,9 @@
     /* FOOTER */
     footer {
       border-top: 1px solid rgba(244,241,235,0.08);
-      padding: 2rem 2.5rem;
+      padding: 2rem 1.25rem;
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 1rem;
     }
 
@@ -590,7 +558,6 @@
       letter-spacing: 0.12em;
       color: var(--white);
       text-decoration: none;
-      flex-shrink: 0;
     }
 
     .footer-logo span { color: var(--yellow); }
@@ -601,8 +568,6 @@
       color: var(--midgray);
       letter-spacing: 0.03em;
       line-height: 1.8;
-      max-width: 600px;
-      text-align: right;
     }
 
     /* ANIMATIONS */
@@ -622,26 +587,53 @@
       transform: translateY(0);
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      nav { padding: 1rem 1.25rem; }
-      .nav-cta { font-size: 0.6rem; padding: 0.45rem 0.75rem; }
-      .nav-text-us { font-size: 0.6rem; padding: 0.45rem 0.6rem; }
-      .hero { padding: 100px 1.25rem 2.5rem; }
-      section { padding: 3.5rem 1.25rem; }
-      .services-grid { grid-template-columns: 1fr; }
-      .service-card { padding: 2rem 1.5rem; }
-      .steps { grid-template-columns: 1fr; gap: 2rem; }
-      .pricing-row { grid-template-columns: 1fr; }
-      .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
-      .form-row { grid-template-columns: 1fr; }
-      .btn-text-mobile { display: inline-block; }
-      footer { flex-direction: column; align-items: flex-start; }
-      .footer-note { text-align: left; }
+    /* TABLET AND UP */
+    @media (min-width: 768px) {
+      nav { padding: 1.25rem 2.5rem; }
+      .nav-logo { font-size: 1.4rem; }
+      .nav-cta { font-size: 0.7rem; padding: 0.5rem 1.25rem; }
+      .nav-text-us { font-size: 0.65rem; padding: 0.5rem 0.75rem; }
+
+      .hero { padding: 120px 2.5rem 3rem; }
+
+      .hero-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .btn-primary,
+      .btn-secondary,
+      .btn-text {
+        display: inline-block;
+        width: auto;
+        text-align: left;
+        padding: 0.9rem 2rem;
+      }
+
+      section { padding: 5rem 2.5rem; }
+
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .service-card { padding: 3rem 2.5rem; }
+      .service-card:hover { background: var(--gray); }
+
+      .steps { grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+
+      .proof-strip { margin: 0 2.5rem; }
+
+      .contact-wrap { grid-template-columns: 1fr 1.5fr; gap: 5rem; align-items: start; }
+
+      footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem 2.5rem;
+      }
+
+      .footer-note { text-align: right; max-width: 600px; }
     }
 
-    @media (max-width: 1024px) and (min-width: 769px) {
-      .services-grid { grid-template-columns: 1fr 1fr; }
+    @media (min-width: 1024px) {
+      .services-grid { grid-template-columns: 1fr 1fr 1fr; }
     }
   </style>
 </head>
@@ -660,12 +652,11 @@
   <p class="hero-tag">Nationwide &nbsp;/&nbsp; Dispute Resolution</p>
   <h1>We solve <em>impossible</em> problems for a fee.</h1>
   <p class="hero-sub">Contractor left the job unfinished. Landlord won't return your deposit. Roommate won't pay or won't leave. You've tried everything. We haven't.</p>
-  <p class="hero-pricing"><strong>$150</strong> intake &nbsp;·&nbsp; <strong>$250–$400</strong> execution &nbsp;·&nbsp; Flat fee. No hourly billing.</p>
-  <p class="hero-pricing" style="margin-top:0.5rem; color:var(--lightgray); font-size:0.72rem;">Average security deposit: $1,500–$2,000. Our max fee: $550. You keep the difference.</p>
+  <p class="hero-flat"><strong>Flat fee. No surprises. No hourly billing.</strong></p>
   <div class="hero-actions">
-    <a href="#contact" class="btn-primary">Free Case Screening</a>
+    <a href="#contact" class="btn-primary">Tell Us What Happened</a>
     <a href="#services" class="btn-secondary">What We Handle</a>
-    <a href="sms:9178018840" class="btn-text-mobile">Text Us Your Situation</a>
+    <a href="sms:9178018840" class="btn-text">Text Us Your Situation</a>
   </div>
 </div>
 
@@ -712,48 +703,31 @@
 
 <hr class="divider">
 
+<div class="proof-strip reveal">
+  <p>Most disputes we handle involve <strong>$1,000–$3,000</strong> at stake. Our flat fee is a fraction of that. We tell you upfront what it costs. If we can't help, we tell you that too — at no charge.</p>
+</div>
+
+<hr class="divider">
+
 <section id="how-it-works">
   <p class="section-label reveal">The process</p>
   <div class="steps">
     <div class="step reveal">
       <div class="step-num">01</div>
-      <h4>Submit your situation</h4>
-      <p>Fill out the screening form below or text us. Describe the dispute and what you've tried. Takes two minutes. Costs nothing.</p>
+      <h4>Tell us what happened</h4>
+      <p>Fill out the form below or text us. Describe the dispute in a few sentences. No payment. No commitment. Takes two minutes.</p>
     </div>
     <div class="step reveal">
       <div class="step-num">02</div>
-      <h4>We assess and advise</h4>
-      <p>We review your case within 24 hours. If we can help, we'll explain what's possible. If we can't move the needle, we'll say so. The $150 intake fee applies only when we take the case.</p>
+      <h4>We respond within 24 hours</h4>
+      <p>We review every submission. If we can help, we'll tell you what's possible and exactly what it costs — one flat fee, no surprises. If we can't move the needle, we'll say so. Free either way.</p>
     </div>
     <div class="step reveal">
       <div class="step-num">03</div>
       <h4>We get to work</h4>
-      <p>Execution begins after the second payment. We apply leverage the other party didn't expect. Most cases resolve within two to four weeks.</p>
+      <p>You pay the flat fee. We apply leverage the other party didn't expect. Most cases resolve within two to four weeks.</p>
     </div>
   </div>
-</section>
-
-<hr class="divider">
-
-<section id="pricing">
-  <p class="section-label reveal">Fees</p>
-  <div class="pricing-row reveal">
-    <div class="pricing-card">
-      <p class="price-label">Intake & Assessment</p>
-      <p class="price-amount">$150</p>
-      <p class="price-desc">Non-refundable. Covers our review of your situation and a direct assessment of what resolution is possible. Charged only after we confirm we're taking your case.</p>
-    </div>
-    <div class="pricing-card featured">
-      <p class="price-label">Execution</p>
-      <p class="price-amount">$250–$400</p>
-      <p class="price-desc">Flat fee based on case complexity. Determined after intake assessment. Paid before execution begins. No hourly billing. No contingency.</p>
-    </div>
-  </div>
-  <p class="pricing-note reveal">
-    Both fees are paid in full before work begins. We don't bill hourly and we don't take a percentage of recovery.
-    Total engagement cost: $400–$550 depending on complexity.
-    We will tell you at intake if your case falls outside what we handle.
-  </p>
 </section>
 
 <hr class="divider">
@@ -763,11 +737,15 @@
     <div class="contact-left reveal">
       <p class="section-label">Start here</p>
       <h2>Free case screening.</h2>
-      <p>Tell us what happened. No payment required. We review every submission and respond within 24 hours. The $150 intake fee applies only if we confirm we can help.</p>
+      <p>Tell us what happened. No payment required. We respond within 24 hours. If we can help, we'll tell you what it costs — one flat fee, upfront, before anything starts.</p>
       <div class="contact-detail">
         <div class="contact-detail-item">
           <span>Response time</span>
           <span>Within 24 hours</span>
+        </div>
+        <div class="contact-detail-item">
+          <span>Cost to submit</span>
+          <span>Free</span>
         </div>
         <div class="contact-detail-item">
           <span>Service area</span>
@@ -780,16 +758,14 @@
       </div>
     </div>
     <div class="contact-right reveal">
-      <form id="cr-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" required placeholder="Full name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email or phone</label>
-            <input type="text" id="email" name="email" required placeholder="How should we reach you?">
-          </div>
+      <form id="cr-form" action="https://formspree.io/f/mkopowaq" method="POST">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required placeholder="Full name" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email or phone</label>
+          <input type="text" id="email" name="email" required placeholder="How should we reach you?" autocomplete="email">
         </div>
         <div class="form-group">
           <label for="type">Dispute type</label>
@@ -804,15 +780,14 @@
           <label for="message">What happened</label>
           <textarea id="message" name="message" required placeholder="Describe the situation. Include the dollar amount at stake and how long it's been unresolved."></textarea>
         </div>
-        <button type="submit" class="form-submit" id="cr-submit">Submit for Review</button>
-        <p class="form-trust">No payment required to submit. We respond within 24 hours. The $150 intake fee applies only if we take your case.</p>
+        <button type="submit" class="form-submit" id="cr-submit">Submit for Free Screening</button>
+        <p class="form-trust">No payment required. We respond within 24 hours. If we can help, we'll tell you the flat fee before anything starts.</p>
         <div id="cr-status" style="display:none; font-family:'DM Mono',monospace; font-size:0.8rem; margin-top:1rem; padding:1rem; border-left:2px solid var(--yellow);"></div>
         <p class="form-disclaimer">
           Submitting this form does not create an engagement or obligate payment.
           Chartreuse Resolutions provides conflict resolution consulting services only.
           We are not lawyers. We do not practice law, appear in court, or provide legal representation.
           If your situation requires legal representation, we will tell you at intake and refer you accordingly.
-          The $150 intake fee covers that assessment.
         </p>
       </form>
     </div>
@@ -821,10 +796,11 @@
 
 <footer>
   <a href="#" class="footer-logo">Chartreuse Resolutions<span>.</span></a>
-  <p class="footer-note">© 2025 Chartreuse Resolutions &nbsp;·&nbsp; Nationwide<br style="display:none"> Chartreuse Resolutions is a conflict resolution consulting firm. We are not attorneys and do not provide legal advice. Nothing on this site constitutes legal counsel or creates an attorney-client relationship. For legal advice, consult a licensed attorney. A proud part of Chartreuse Explosives.</p>
+  <p class="footer-note">© 2025 Chartreuse Resolutions &nbsp;·&nbsp; Nationwide<br>Chartreuse Resolutions is a conflict resolution consulting firm. We are not attorneys and do not provide legal advice. Nothing on this site constitutes legal counsel or creates an attorney-client relationship. For legal advice, consult a licensed attorney. A proud part of Chartreuse Explosives.</p>
 </footer>
 
 <script>
+  // Scroll reveals
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -833,9 +809,10 @@
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
   reveals.forEach(el => observer.observe(el));
 
+  // Form submission
   document.getElementById('cr-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = document.getElementById('cr-submit');
@@ -853,13 +830,13 @@
         btn.style.display = 'none';
         status.style.display = 'block';
         status.style.color = 'var(--yellow)';
-        status.textContent = 'Received. We review every submission and will contact you within 24 hours if your case is one we can move.';
-        
-        // Google Ads Conversion Event
+        status.textContent = 'Received. We review every submission and will contact you within 24 hours.';
+
+        // Google Ads conversion
         gtag('event', 'conversion', {
-            'send_to': 'AW-11183152636/4fMWCLnr7JYcEPy7xdQp',
-            'value': 150.0,
-            'currency': 'USD'
+          'send_to': 'AW-11183152636/4fMWCLnr7JYcEPy7xdQp',
+          'value': 300.0,
+          'currency': 'USD'
         });
 
       } else {
@@ -867,7 +844,7 @@
       }
     } catch {
       btn.disabled = false;
-      btn.textContent = 'Submit for Review';
+      btn.textContent = 'Submit for Free Screening';
       status.style.display = 'block';
       status.style.color = '#c0392b';
       status.textContent = 'Something went wrong. Try again or text us at (917) 801-8840.';
