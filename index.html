@@ -636,6 +636,151 @@
       .services-grid { grid-template-columns: 1fr 1fr 1fr; }
     }
   </style>
+<!-- 
+  CHARTREUSE RESOLUTIONS — SCHEMA JSON-LD
+  Place this block in the <head> of resolutions.chartreuseexplosives.com
+  before the closing </head> tag.
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["ProfessionalService", "LocalBusiness"],
+      "@id": "https://resolutions.chartreuseexplosives.com/#organization",
+      "name": "Chartreuse Resolutions",
+      "url": "https://resolutions.chartreuseexplosives.com/",
+      "logo": "https://chartreuseexplosives.com/logo.png",
+      "description": "Nationwide flat-fee dispute resolution consulting. We handle landlord-tenant disputes, contractor conflicts, and roommate standoffs. No lawyers. No hourly billing. No surprises. We negotiate, document, and escalate until the problem breaks.",
+      "parentOrganization": {
+        "@id": "https://chartreuseexplosives.com/#organization"
+      },
+      "founder": {
+        "@id": "https://chartreuseexplosives.com/#prince-campbell"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "priceRange": "$150–$400",
+      "knowsAbout": [
+        "Landlord-Tenant Disputes",
+        "Contractor Disputes",
+        "Roommate Conflicts",
+        "Deposit Recovery",
+        "Cash-for-Keys Negotiation",
+        "Dispute Resolution"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Chartreuse Resolutions Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Intake Screening",
+            "price": "150",
+            "priceCurrency": "USD",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dispute Intake & Assessment",
+              "description": "Initial flat-fee intake and assessment of your dispute situation."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Standard Resolution",
+            "price": "250",
+            "priceCurrency": "USD",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Standard Dispute Resolution",
+              "description": "Full dispute resolution execution for standard landlord-tenant, contractor, or roommate conflicts."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Complex Resolution",
+            "price": "300",
+            "priceCurrency": "USD",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Complex Dispute Resolution",
+              "description": "Resolution for multi-party or escalated dispute situations."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Full Escalation",
+            "price": "400",
+            "priceCurrency": "USD",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Full Escalation & Documentation",
+              "description": "Complete escalation with parallel documentation for high-stakes dispute situations."
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://chartreuseexplosives.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://resolutions.chartreuseexplosives.com/#website",
+      "url": "https://resolutions.chartreuseexplosives.com/",
+      "name": "Chartreuse Resolutions",
+      "publisher": {
+        "@id": "https://resolutions.chartreuseexplosives.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Chartreuse Resolutions a law firm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Chartreuse Resolutions is a flat-fee dispute resolution consulting firm, not a law firm. We do not provide legal representation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of disputes does Chartreuse Resolutions handle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We handle landlord-tenant disputes, contractor conflicts, and roommate standoffs nationwide. This includes deposit recovery, contractor non-completion, and cash-for-keys negotiation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Chartreuse Resolutions charge for its services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Flat fee only. No hourly billing. No surprises. Pricing ranges from $150 for intake to $400 for full escalation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Chartreuse Resolutions operate nationwide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Chartreuse Resolutions operates nationwide across the United States."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
